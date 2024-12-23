@@ -1,4 +1,4 @@
-from player import HumanPlayer, RandomComputerPlayer
+from player import HumanPlayer, RandomComputerPlayer, PerfectComputerPlayer
 
 
 class TicTacToe:
@@ -115,6 +115,6 @@ def play(game, x_player, o_player, print_board=True):
 
 if __name__ == '__main__':
     t1 = TicTacToe()
-    playerX = HumanPlayer('X')
-    playerO = RandomComputerPlayer('O')
+    playerX = PerfectComputerPlayer('X')
+    playerO = HumanPlayer('O')
     play(t1, playerX, playerO)
